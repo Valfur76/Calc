@@ -1,10 +1,8 @@
 public class RomanToArabic {
     public int getNumber(String roman) throws ExpressionException {
         int n = 0;
-        String s = "";
         for (int j = 0; j < roman.length (); j++) {
-            s = roman.substring(j, j + 1);
-            switch (s) {
+            switch (roman.substring(j, j + 1)) {
                 case "X":
                     if (n == 0) {
                         n = 10;
